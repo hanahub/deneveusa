@@ -1,0 +1,87 @@
+/*
+Style for Clip Cart.
+*/
+
+a, 
+h2 a:hover {
+	color: #5191ba;
+}
+
+#wrap {
+	border-color: #5191ba;
+}
+
+.breadcrumb .crumb_home a {
+	background-image: url(blue/bg-crumbhome.png);
+}
+
+#slides .nav {
+	background-image: url(blue/graphic-slidernav_spr.png);
+}
+
+a.button, 
+.reply a, 
+.reply a:visited,
+.gform_wrapper div.gform_footer input.button,
+.enews #subbutton,
+.searchsubmit,
+#submit,
+#wrap .Cart66ButtonPrimary, 
+#wrap .Cart66ButtonSecondary, 
+#wrap #content .Cart66ButtonPrimary, 
+#wrap #content .Cart66ButtonSecondary, 
+#wrap .Cart66CartButton .purAddToCart {
+	background: url(blue/bg-button.png) repeat-x center;
+	border-color: #3576a0;
+	color: #fff !important;
+	text-shadow: 1px 1px rgba(0,0,0,.5);
+	-webkit-box-shadow: inset 0px 0px 0px 1px rgba(255,255,255,.15);
+	-moz-box-shadow: inset 0px 0px 0px 1px rgba(255,255,255,.15);
+	box-shadow: inset 0px 0px 0px 1px rgba(255,255,255,.15);
+}
+
+a.button:hover, 
+.reply a:hover,
+.gform_wrapper div.gform_footer input.button:hover,
+.enews #subbutton:hover,
+.searchsubmit:hover,
+#submit:hover,
+#wrap .Cart66ButtonPrimary:hover, 
+#wrap .Cart66ButtonSecondary:hover, 
+#wrap #content .Cart66ButtonPrimary:hover, 
+#wrap #content .Cart66ButtonSecondary:hover, 
+#wrap .Cart66CartButton .purAddToCart:hover {
+	border-color: #1c5274;
+}
+
+a.button:active, 
+.reply a:active,
+.gform_wrapper div.gform_footer input.button:active,
+.enews #subbutton:active,
+.searchsubmit:active,
+#submit:active,
+#wrap .Cart66ButtonPrimary:active, 
+#wrap .Cart66ButtonSecondary:active, 
+#wrap #content .Cart66ButtonPrimary:active, 
+#wrap #content .Cart66ButtonSecondary:active, 
+#wrap .Cart66CartButton .purAddToCart:active {
+	background: url(blue/bg-button-hover.png) repeat-x center #5191ba;
+	border-color: #1c5274;
+}
+
+#mobile_menu_area #pull {
+	background-color: #5191ba;
+	background-image: linear-gradient(to bottom, #5191ba, #43799b);
+	border-color: #325064;
+}
+
+#mobile_menu_area #pull a:hover,
+#mobile_menu_area #pull .current_page_item a,
+#mobile_menu_area #pull .current-cat a,
+#mobile_menu_area #pull .current-menu-item a {
+	background-color: #326484;
+}
+
+#mobile_menu_area #pull:after {
+	background-image: url('blue/mobile_button.png');
+}

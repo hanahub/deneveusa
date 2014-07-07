@@ -1,0 +1,102 @@
+/** Portfolio Meta Box **/
+#themedy_portfolio_meta_box {
+	display: none;
+	visibility: hidden;
+}
+
+.themedy-portfolio #themedy_portfolio_meta_box {
+	display: block;
+	visibility: visible;
+}
+
+/** A dividing horizontal rule **/
+hr.div {
+	background: #CCC;
+	height: 1px;
+	border: none;
+	margin: 10px 0;
+}
+
+/** Themedy metabox Styles **/
+
+.themedy-metaboxes h2 {
+	float: left;
+}
+
+.themedy-metaboxes .top-buttons {
+   display: none;
+   padding-left: 8px;
+}
+
+.themedy-metaboxes .bottom-buttons {
+	padding-left: 8px;
+}
+
+.themedy-metaboxes .metabox-holder {
+	overflow: hidden;
+	clear: both;
+}
+
+.themedy-metaboxes .inside {
+	padding: 0 10px;
+	overflow: hidden;
+}
+
+.no-js .hide-if-no-js {
+	display: none;
+}
+
+.widget-control-actions {
+	clear: both;
+}
+
+.themedy-metaboxes .postbox textarea {
+	width: 100%;
+}
+
+/** Themedy custom admin icons **/
+#menu-posts-portfolio .wp-menu-image {
+	background: url(../images/icon-portfolio.png) no-repeat 7px -17px !important;
+}
+
+#menu-posts-slide .wp-menu-image {
+	background: url(../images/icon-slides.png) no-repeat 7px -17px !important;
+}
+
+#menu-posts-products .wp-menu-image {
+	background: url(../images/icon-products.png) no-repeat 7px -17px !important;
+}
+
+#menu-posts-photo .wp-menu-image {
+	background: url(../images/icon-photos.png) no-repeat 7px -17px !important;
+}
+
+#menu-posts-portfolio:hover .wp-menu-image, 
+#menu-posts-portfolio.wp-has-current-submenu .wp-menu-image,
+#menu-posts-slide:hover .wp-menu-image, 
+#menu-posts-slide.wp-has-current-submenu .wp-menu-image,
+#menu-posts-products:hover .wp-menu-image, 
+#menu-posts-products.wp-has-current-submenu .wp-menu-image,
+#menu-posts-photo:hover .wp-menu-image,
+#menu-posts-photo.wp-has-current-submenu .wp-menu-image {
+		background-position:7px 7px!important;
+}
+
+/** Media Queries **/
+
+@media only screen and (max-width:799px) {
+	.themedy-metaboxes .top-buttons {
+		display: block;
+	}
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2) {
+  
+	#menu-posts-portfolio .wp-menu-image, 
+	#menu-posts-slide .wp-menu-image, 
+	#menu-posts-products .wp-menu-image, 
+	#menu-posts-photo .wp-menu-image {
+		background-size: 16px 40px;
+	}
+  
+}

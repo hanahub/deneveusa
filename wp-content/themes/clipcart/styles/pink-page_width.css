@@ -1,0 +1,115 @@
+/*
+Style for Clip Cart.
+*/
+
+a, 
+h2 a:hover {
+	color: #dd81cb;
+}
+
+#wrap {
+	border-color: #dd81cb;
+}
+
+.breadcrumb .crumb_home a {
+	background-image: url(pink/bg-crumbhome.png);
+}
+
+#slides .nav {
+	background-image: url(pink/graphic-slidernav_spr.png);
+}
+
+a.button, 
+.reply a, 
+.reply a:visited,
+.gform_wrapper div.gform_footer input.button,
+.enews #subbutton,
+.searchsubmit,
+#submit,
+#wrap .Cart66ButtonPrimary, 
+#wrap .Cart66ButtonSecondary, 
+#wrap #content .Cart66ButtonPrimary, 
+#wrap #content .Cart66ButtonSecondary, 
+#wrap .Cart66CartButton .purAddToCart {
+	background: url(pink/bg-button.png) repeat-x center;
+	border-color: #ba60a9;
+	color: #fff !important;
+	text-shadow: 1px 1px rgba(0,0,0,.5);
+	-webkit-box-shadow: inset 0px 0px 0px 1px rgba(255,255,255,.15);
+	-moz-box-shadow: inset 0px 0px 0px 1px rgba(255,255,255,.15);
+	box-shadow: inset 0px 0px 0px 1px rgba(255,255,255,.15);
+}
+
+a.button:hover, 
+.reply a:hover,
+.gform_wrapper div.gform_footer input.button:hover,
+.enews #subbutton:hover,
+.searchsubmit:hover,
+#submit:hover,
+#wrap .Cart66ButtonPrimary:hover, 
+#wrap .Cart66ButtonSecondary:hover, 
+#wrap #content .Cart66ButtonPrimary:hover, 
+#wrap #content .Cart66ButtonSecondary:hover, 
+#wrap .Cart66CartButton .purAddToCart:hover {
+	border-color: #813372;
+}
+
+a.button:active, 
+.reply a:active,
+.gform_wrapper div.gform_footer input.button:active,
+.enews #subbutton:active,
+.searchsubmit:active,
+#submit:active,
+#wrap .Cart66ButtonPrimary:active, 
+#wrap .Cart66ButtonSecondary:active, 
+#wrap #content .Cart66ButtonPrimary:active, 
+#wrap #content .Cart66ButtonSecondary:active, 
+#wrap .Cart66CartButton .purAddToCart:active {
+	background: url(pink/bg-button-hover.png) repeat-x center #dd81cb;
+	border-color: #813372;
+}
+
+/* Page Style */
+#wrap {
+	width: 1020px;
+	margin: 30px auto;
+	background: url(../images/bg-body.png) repeat;
+	border-bottom: 1px solid #ccc;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+}
+
+body {
+	background: #f2f2f2;
+}
+
+#mobile_menu_area #pull {
+	background-color: #dd81cb;
+	background-image: linear-gradient(to bottom, #dd81cb, #b34f9f);
+	border-color: #864279;
+}
+
+#mobile_menu_area #pull a {
+	color: #eee;
+}
+
+#mobile_menu_area #pull a:hover,
+#mobile_menu_area #pull .current_page_item a,
+#mobile_menu_area #pull .current-cat a,
+#mobile_menu_area #pull .current-menu-item a {
+	background-color: #a54392;
+}
+
+#mobile_menu_area #pull:after {
+	background-image: url('pink/mobile_button.png');
+}
+
+@media only screen and (max-width: 1036px) {
+	
+	#wrap {
+		width: auto;
+		margin: 0 auto;
+	}
+	
+}

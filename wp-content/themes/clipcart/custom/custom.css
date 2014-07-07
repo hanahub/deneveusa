@@ -1,0 +1,15 @@
+/*
+
+IMPORTANT: Make sure to turn "Use the custom.css stylesheet?" option on in your Child 
+Theme settings page (under the top level Genesis menu item in your Wordpress dashboard). 
+
+You can use the "custom" class to override *any* CSS declarations contained in the 
+style.css file.
+
+For example, if you wish to change the default link color to green, you would add the 
+following declarations to this file:
+
+	.custom a, .custom a:visited { color: #090; }	<--- This makes links green
+	.custom a:hover { color: #00f; }	<--- This makes links blue when you mouse over them
+
+*/

@@ -1,0 +1,57 @@
+# BEGIN iThemes Security
+	# BEGIN Tweaks
+		# Rules to block access to WordPress specific files
+		<files .htaccess>
+			Order allow,deny
+			Deny from all
+		</files>
+		<files readme.html>
+			Order allow,deny
+			Deny from all
+		</files>
+		<files readme.txt>
+			Order allow,deny
+			Deny from all
+		</files>
+		<files install.php>
+			Order allow,deny
+			Deny from all
+		</files>
+		<files wp-config.php>
+			Order allow,deny
+			Deny from all
+		</files>
+		
+		<IfModule mod_rewrite.c>
+			RewriteEngine On
+		
+			# Rules to protect wp-includes
+			RewriteRule ^wp-admin/includes/ - [F]
+			RewriteRule !^wp-includes/ - [S=3]
+			RewriteCond %{SCRIPT_FILENAME} !^(.*)wp-includes/ms-files.php
+			RewriteRule ^wp-includes/[^/]+\.php$ - [F]
+			RewriteRule ^wp-includes/js/tinymce/langs/.+\.php - [F]
+			RewriteRule ^wp-includes/theme-compat/ - [F]
+		
+			# Rules to help reduce spam
+			RewriteCond %{REQUEST_METHOD} POST
+			RewriteCond %{REQUEST_URI} ^(.*)wp-comments-post\.php*
+			RewriteCond %{HTTP_REFERER} !^(.*)deneveusa.com.* 
+			RewriteCond %{HTTP_REFERER} !^http://jetpack\.wordpress\.com/jetpack-comment/ [OR]
+			RewriteCond %{HTTP_USER_AGENT} ^$
+			RewriteRule ^(.*)$ - [F]
+		</IfModule>
+	# END Tweaks
+# END iThemes Security
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /deneveusa.com/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /deneveusa.com/index.php [L]
+</IfModule>
+
+# END WordPress
