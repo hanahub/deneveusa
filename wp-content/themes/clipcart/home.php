@@ -103,7 +103,6 @@ genesis_before_content_sidebar_wrap(); ?>
             if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                 <li class="product <?php if ( $loop_counter == 4 ) { echo "product-last"; } ?>">
                     <div class="product_wrap">
-                    2222
                         <?php 
                         $title = get_the_title().' ';
                         $chars_title = strlen($title);
