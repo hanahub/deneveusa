@@ -103,6 +103,7 @@ genesis_before_content_sidebar_wrap(); ?>
             if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                 <li class="product <?php if ( $loop_counter == 4 ) { echo "product-last"; } ?>">
                     <div class="product_wrap">
+                    2222
                         <?php 
                         $title = get_the_title().' ';
                         $chars_title = strlen($title);
@@ -119,7 +120,7 @@ genesis_before_content_sidebar_wrap(); ?>
                         if (genesis_get_image()) {
 							$img = genesis_get_image( array( 'format' => 'html', 'size' => 'Product Thumb', 'attr' => array( 'title' => $post_title  ) ) );
 							printf( '<div class="thumb-wrap"><a href="%s" class="product-thumb" title="%s">%s</a></div>', get_permalink(), the_title_attribute('echo=0'), $img ); 
-                    	} 
+                    	}
                         ?>
                         <h3 class="entry-title product-title"><a href="<?php the_permalink(); ?>" class="title"><?php echo $title; ?></a></h3>
                         <div class="product_content">
